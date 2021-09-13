@@ -109,7 +109,7 @@ def make_dots_from_avalon_nodes():
 
         new_node = nuke.nodes.Dot(label = my_label, tile_color = '0xff7f00ff')
         swap_nodes(node, new_node)
-        #nuke.delete(node)
+        nuke.delete(node)
 
     return True
 
@@ -167,5 +167,5 @@ def template_connect():
                 
 
 
-#make_dots_from_avalon_nodes()
-template_connect()
+make_dots_from_avalon_nodes()
+#template_connect()
